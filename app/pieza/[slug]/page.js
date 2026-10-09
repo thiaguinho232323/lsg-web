@@ -22,7 +22,7 @@ export function generateMetadata({ params }) {
 const ESTADO_TEXTO = {
   disponible: 'Disponible',
   reservada: 'Reservada',
-  vendida: 'Vendida · Archivo',
+  vendida: 'Vendida',
 };
 
 const CONDICION_TEXTO = {
@@ -46,7 +46,7 @@ export default function PiezaPage({ params }) {
       <div className="pt-16 md:pt-28">
         <div className="mx-auto max-w-7xl md:px-10">
           <nav className="hidden items-center gap-3 pb-8 text-[10px] uppercase tracking-[0.25em] text-stone md:flex">
-            <Link href="/galeria" className="hover:text-gold">Galería</Link>
+            <Link href="/galeria" className="hover:text-gold">Selección</Link>
             <span>/</span>
             <Link href={`/galeria?marca=${encodeURIComponent(p.marca)}`} className="hover:text-gold">{p.marca}</Link>
             <span>/</span>
@@ -74,7 +74,7 @@ export default function PiezaPage({ params }) {
                 </div>
 
                 <p className="mt-8 text-[11px] uppercase tracking-luxe text-stone">{p.marca}</p>
-                <h1 className="mt-3 font-serif text-4xl font-light leading-[1.05] md:text-5xl">{p.nombre}</h1>
+                <h1 className="serif-title mt-4 text-[2.6rem] md:text-5xl">{p.nombre}</h1>
 
                 <p className={`mt-6 font-serif text-3xl ${vendida ? 'text-stone line-through' : 'text-ivory'}`}>
                   {formatUSD(p.precio)}
@@ -94,7 +94,7 @@ export default function PiezaPage({ params }) {
                   ))}
                 </dl>
                 {CONDICION_TEXTO[p.condicion] && (
-                  <p className="mt-3 text-xs italic text-stone">{CONDICION_TEXTO[p.condicion]}</p>
+                  <p className="mt-3 text-xs text-stone">{CONDICION_TEXTO[p.condicion]}</p>
                 )}
 
                 <a
@@ -129,7 +129,7 @@ export default function PiezaPage({ params }) {
                 )}
 
                 <div className="mt-10 grid grid-cols-3 gap-px border border-line bg-line text-center text-[9px] uppercase leading-relaxed tracking-[0.2em] text-stone">
-                  <span className="bg-ink px-2 py-4">Origen<br />verificado</span>
+                  <span className="bg-ink px-2 py-4">Autenticidad<br />verificada</span>
                   <span className="bg-ink px-2 py-4">Envíos a<br />todo el país</span>
                   <span className="bg-ink px-2 py-4">Atención<br />personal</span>
                 </div>
@@ -144,11 +144,11 @@ export default function PiezaPage({ params }) {
         <section className="mt-24 border-t border-line/70 py-16 md:mt-32 md:py-24">
           <div className="mx-auto max-w-7xl px-5 md:px-10">
             <div className="flex items-end justify-between">
-              <h2 className="font-serif text-3xl font-light md:text-5xl">
-                También <em className="text-gold">en sala</em>
+              <h2 className="serif-title text-3xl md:text-5xl">
+                Otras <span className="text-gold">piezas</span>
               </h2>
               <Link href="/galeria" className="link-underline mb-1 inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-ivory/80">
-                Galería <ArrowIcon />
+                Ver todas <ArrowIcon />
               </Link>
             </div>
             <div className="mt-10 grid grid-cols-2 gap-x-3 gap-y-10 md:grid-cols-4 md:gap-x-6">
