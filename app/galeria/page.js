@@ -2,8 +2,8 @@ import Catalog from '@/components/Catalog';
 import { allPieces } from '@/lib/pieces';
 
 export const metadata = {
-  title: 'Galería',
-  description: 'Todas las piezas en sala: filtrá por marca, categoría y talle.',
+  title: 'Selección',
+  description: 'Todas las piezas disponibles: filtrá por marca, categoría y talle.',
 };
 
 export default function GaleriaPage({ searchParams }) {
@@ -13,13 +13,13 @@ export default function GaleriaPage({ searchParams }) {
   return (
     <div className="pt-28 md:pt-36">
       <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <p className="kicker">La galería</p>
+        <p className="kicker">La selección</p>
         <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <h1 className="font-serif text-5xl font-light leading-none md:text-8xl">
-            Piezas <em className="text-gold">en sala</em>
+          <h1 className="serif-title text-5xl md:text-8xl">
+            Piezas <span className="text-gold">disponibles</span>
           </h1>
           <p className="max-w-sm text-sm leading-relaxed text-stone">
-            {enSala} piezas disponibles hoy. Cada una es única: lo que ves es lo que hay.
+            {enSala} piezas disponibles. Cada una es única y la selección se renueva con cada ingreso.
           </p>
         </div>
       </div>
