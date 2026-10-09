@@ -17,7 +17,7 @@ export default function Home() {
       <section className="grain relative flex min-h-[100svh] flex-col overflow-hidden bg-ink">
         <HeroVideo src={site.heroVideo} srcMobile={site.heroVideoMobile} />
         {/* velos para que el texto siempre se lea */}
-        <div className="pointer-events-none absolute inset-0 bg-ink/45" />
+        <div className="pointer-events-none absolute inset-0 bg-ink/30" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-ink/60" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(10,10,10,0.7)_100%)]" />
 
@@ -33,11 +33,11 @@ export default function Home() {
           />
 
           <h1 className="serif-title mt-9 md:mt-11">
-            <span className="rise block text-[15vw] text-ivory md:text-[7.5rem]" style={{ animationDelay: '650ms' }}>
+            <span className="rise block text-[17vw] text-ivory md:text-[7.5rem]" style={{ animationDelay: '650ms' }}>
               Elegido
             </span>
             <span
-              className="rise gold-sheen block text-[15vw] md:text-[7.5rem]"
+              className="rise gold-sheen block text-[17vw] md:text-[7.5rem]"
               style={{ animationDelay: '900ms' }}
             >
               para pocos.
@@ -259,7 +259,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center grayscale md:bg-fixed"
           style={{ backgroundImage: `url("${site.imagenEncargos}")` }}
         />
-        <div className="absolute inset-0 bg-ink/75" />
+        <div className="absolute inset-0 bg-ink/60" />
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-transparent to-ink" />
 
         <Reveal className="relative z-10 mx-auto max-w-3xl px-6 text-center md:px-10">
