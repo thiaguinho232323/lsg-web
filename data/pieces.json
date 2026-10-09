@@ -1,0 +1,279 @@
+[
+  {
+    "slug": "louis-vuitton-keepall-50-eclipse",
+    "numero": 1,
+    "marca": "Louis Vuitton",
+    "nombre": "Keepall Bandoulière 50 Monogram Eclipse",
+    "categoria": "Bolsos",
+    "talle": "Único",
+    "condicion": "Impecable",
+    "precio": 2400,
+    "estado": "disponible",
+    "badge": "Pieza única",
+    "destacada": true,
+    "descripcion": "Bolso de viaje en lona Monogram Eclipse con detalles en cuero negro. Incluye correa y candado original.",
+    "detalles": [
+      "Lona Monogram Eclipse",
+      "Herrajes oscuros",
+      "Correa desmontable",
+      "Incluye dust bag"
+    ],
+    "fotos": [
+      "/piezas/louis-vuitton-keepall-50-eclipse-1.jpg",
+      "/piezas/louis-vuitton-keepall-50-eclipse-2.jpg"
+    ]
+  },
+  {
+    "slug": "balenciaga-campaign-hoodie-black",
+    "numero": 2,
+    "marca": "Balenciaga",
+    "nombre": "Hoodie Political Campaign Oversize",
+    "categoria": "Buzos",
+    "talle": "L",
+    "condicion": "Nueva",
+    "precio": 650,
+    "estado": "disponible",
+    "badge": null,
+    "destacada": true,
+    "descripcion": "Corte oversize característico, algodón pesado y bordado frontal. Sin uso, con etiquetas.",
+    "detalles": [
+      "Algodón 100%",
+      "Fit oversize",
+      "Con etiquetas"
+    ],
+    "fotos": [
+      "/piezas/balenciaga-campaign-hoodie-black-1.jpg",
+      "/piezas/balenciaga-campaign-hoodie-black-2.jpg"
+    ]
+  },
+  {
+    "slug": "amiri-mx1-bandana-black",
+    "numero": 3,
+    "marca": "Amiri",
+    "nombre": "Jean MX1 Bandana Black",
+    "categoria": "Pantalones",
+    "talle": "32",
+    "condicion": "Impecable",
+    "precio": 780,
+    "estado": "disponible",
+    "badge": "Edición limitada",
+    "destacada": true,
+    "descripcion": "Denim negro skinny con paneles de bandana y costuras reforzadas en rodillas.",
+    "detalles": [
+      "Denim stretch",
+      "Paneles de bandana en seda",
+      "Hecho en Los Ángeles"
+    ],
+    "fotos": [
+      "/piezas/amiri-mx1-bandana-black-1.jpg",
+      "/piezas/amiri-mx1-bandana-black-2.jpg"
+    ]
+  },
+  {
+    "slug": "off-white-out-of-office-white",
+    "numero": 4,
+    "marca": "Off-White",
+    "nombre": "Out Of Office “For Walking”",
+    "categoria": "Calzado",
+    "talle": "42",
+    "condicion": "Nueva",
+    "precio": 520,
+    "estado": "disponible",
+    "badge": null,
+    "destacada": false,
+    "descripcion": "Zapatilla baja en cuero blanco con la flecha lateral y el precinto característico.",
+    "detalles": [
+      "Cuero liso",
+      "Precinto incluido",
+      "Caja original"
+    ],
+    "fotos": [
+      "/piezas/off-white-out-of-office-white-1.jpg",
+      "/piezas/off-white-out-of-office-white-2.jpg"
+    ]
+  },
+  {
+    "slug": "loewe-anagram-mohair-cardigan",
+    "numero": 5,
+    "marca": "Loewe",
+    "nombre": "Cardigan Anagram de Mohair",
+    "categoria": "Tejidos",
+    "talle": "M",
+    "condicion": "Impecable",
+    "precio": 1150,
+    "estado": "disponible",
+    "badge": "Pieza única",
+    "destacada": true,
+    "descripcion": "Tejido de mohair suave con Anagram en relieve. Una de las piezas más pedidas de la temporada.",
+    "detalles": [
+      "Mohair y lana",
+      "Botones de nácar",
+      "Hecho en Italia"
+    ],
+    "fotos": [
+      "/piezas/loewe-anagram-mohair-cardigan-1.jpg",
+      "/piezas/loewe-anagram-mohair-cardigan-2.jpg"
+    ]
+  },
+  {
+    "slug": "supreme-box-logo-hoodie-ash",
+    "numero": 6,
+    "marca": "Supreme",
+    "nombre": "Box Logo Hooded Sweatshirt Ash Grey",
+    "categoria": "Buzos",
+    "talle": "M",
+    "condicion": "Nueva",
+    "precio": 900,
+    "estado": "reservada",
+    "badge": "Pieza única",
+    "destacada": true,
+    "descripcion": "El clásico Box Logo en gris ceniza. Sin uso, con bolsa original.",
+    "detalles": [
+      "Algodón heavyweight",
+      "Box Logo bordado",
+      "Bolsa original"
+    ],
+    "fotos": [
+      "/piezas/supreme-box-logo-hoodie-ash-1.jpg",
+      "/piezas/supreme-box-logo-hoodie-ash-2.jpg"
+    ]
+  },
+  {
+    "slug": "louis-vuitton-lv-trainer-black",
+    "numero": 7,
+    "marca": "Louis Vuitton",
+    "nombre": "LV Trainer Sneaker Black",
+    "categoria": "Calzado",
+    "talle": "43",
+    "condicion": "Impecable",
+    "precio": 1350,
+    "estado": "disponible",
+    "badge": null,
+    "destacada": true,
+    "descripcion": "Zapatilla de diseño atemporal en cuero negro con Monogram en relieve.",
+    "detalles": [
+      "Cuero de becerro",
+      "Suela de goma",
+      "Incluye caja y dust bags"
+    ],
+    "fotos": [
+      "/piezas/louis-vuitton-lv-trainer-black-1.jpg",
+      "/piezas/louis-vuitton-lv-trainer-black-2.jpg"
+    ]
+  },
+  {
+    "slug": "balenciaga-triple-s-black",
+    "numero": 8,
+    "marca": "Balenciaga",
+    "nombre": "Triple S Black",
+    "categoria": "Calzado",
+    "talle": "41",
+    "condicion": "Con uso",
+    "precio": 850,
+    "estado": "disponible",
+    "badge": null,
+    "destacada": false,
+    "descripcion": "Suela triple apilada, construcción en capas. Uso leve, sin detalles relevantes.",
+    "detalles": [
+      "Mesh y cuero",
+      "Suela triple",
+      "Uso leve"
+    ],
+    "fotos": [
+      "/piezas/balenciaga-triple-s-black-1.jpg",
+      "/piezas/balenciaga-triple-s-black-2.jpg"
+    ]
+  },
+  {
+    "slug": "amiri-core-logo-tee",
+    "numero": 9,
+    "marca": "Amiri",
+    "nombre": "Remera Core Logo",
+    "categoria": "Remeras",
+    "talle": "L",
+    "condicion": "Nueva",
+    "precio": 380,
+    "estado": "disponible",
+    "badge": null,
+    "destacada": false,
+    "descripcion": "Remera de algodón jersey con logo estampado al frente.",
+    "detalles": [
+      "Algodón jersey",
+      "Fit regular",
+      "Con etiquetas"
+    ],
+    "fotos": [
+      "/piezas/amiri-core-logo-tee-1.jpg",
+      "/piezas/amiri-core-logo-tee-2.jpg"
+    ]
+  },
+  {
+    "slug": "loewe-puzzle-small-tan",
+    "numero": 10,
+    "marca": "Loewe",
+    "nombre": "Puzzle Bag Small Tan",
+    "categoria": "Bolsos",
+    "talle": "Único",
+    "condicion": "Impecable",
+    "precio": 2100,
+    "estado": "disponible",
+    "badge": "Pieza única",
+    "destacada": true,
+    "descripcion": "El bolso geométrico más reconocido de la casa, en cuero tan. Estado impecable.",
+    "detalles": [
+      "Cuero de becerro",
+      "Correa ajustable",
+      "Incluye dust bag"
+    ],
+    "fotos": [
+      "/piezas/loewe-puzzle-small-tan-1.jpg",
+      "/piezas/loewe-puzzle-small-tan-2.jpg"
+    ]
+  },
+  {
+    "slug": "off-white-varsity-jacket",
+    "numero": 11,
+    "marca": "Off-White",
+    "nombre": "Varsity Jacket Cuero y Lana",
+    "categoria": "Abrigos",
+    "talle": "M",
+    "condicion": "Impecable",
+    "precio": 1600,
+    "estado": "vendida",
+    "badge": "Edición limitada",
+    "destacada": false,
+    "descripcion": "Campera varsity en lana con mangas de cuero. Pieza de archivo.",
+    "detalles": [
+      "Lana y cuero",
+      "Bordados",
+      "Forro acolchado"
+    ],
+    "fotos": [
+      "/piezas/off-white-varsity-jacket-1.jpg",
+      "/piezas/off-white-varsity-jacket-2.jpg"
+    ]
+  },
+  {
+    "slug": "supreme-box-logo-tee-white",
+    "numero": 12,
+    "marca": "Supreme",
+    "nombre": "Box Logo Tee White",
+    "categoria": "Remeras",
+    "talle": "M",
+    "condicion": "Nueva",
+    "precio": 280,
+    "estado": "disponible",
+    "badge": null,
+    "destacada": false,
+    "descripcion": "Remera blanca con el Box Logo rojo. Sin uso.",
+    "detalles": [
+      "Algodón 100%",
+      "Sin uso",
+      "Con etiquetas"
+    ],
+    "fotos": [
+      "/piezas/supreme-box-logo-tee-white-1.jpg",
+      "/piezas/supreme-box-logo-tee-white-2.jpg"
+    ]
+  }
+]
