@@ -297,11 +297,6 @@
     "fotos": [
       "/piezas/louis-vuitton-lv-skate-black-1.jpg",
       "/piezas/louis-vuitton-lv-skate-black-2.jpg"
-    ],
-    "vista360": {
-      "carpeta": "/piezas/louis-vuitton-lv-skate-black/360",
-      "cuadros": 36,
-      "extension": "jpg"
-    }
+    ]
   }
 ]
