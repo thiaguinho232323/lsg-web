@@ -20,7 +20,7 @@ export default function Footer() {
             <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold">
               <InstagramIcon className="h-3.5 w-3.5" /> Instagram
             </a>
-            <Link href="/#curaduria" className="hover:text-gold">Curaduría</Link>
+            <Link href="/#criterio" className="hover:text-gold">Criterio</Link>
             <a href={site.tiktok} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold">
               <TikTokIcon className="h-3.5 w-3.5" /> TikTok
             </a>
