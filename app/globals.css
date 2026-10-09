@@ -13,8 +13,7 @@ html {
 }
 
 body {
-  @apply bg-ink font-sans text-ivory antialiased;
-  font-feature-settings: 'ss01', 'cv11';
+  @apply bg-ink font-sans font-light text-ivory antialiased;
 }
 
 ::selection {
@@ -24,13 +23,16 @@ body {
 
 @layer components {
   .kicker {
-    @apply text-[10px] uppercase tracking-luxe text-gold;
+    @apply text-[10px] font-light uppercase tracking-luxe text-gold;
   }
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-3 bg-gold px-7 py-4 text-[11px] font-medium uppercase tracking-[0.28em] text-ink transition duration-300 hover:bg-ivory;
+    @apply inline-flex items-center justify-center gap-3 border border-gold/70 bg-ink/20 px-8 py-4 text-[10.5px] font-normal uppercase tracking-[0.32em] text-gold backdrop-blur-[2px] transition duration-500 hover:border-gold hover:bg-gold hover:text-ink;
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-3 border border-ivory/25 px-7 py-4 text-[11px] uppercase tracking-[0.28em] text-ivory transition duration-300 hover:border-gold hover:text-gold;
+    @apply inline-flex items-center justify-center gap-3 border border-ivory/20 px-8 py-4 text-[10.5px] font-light uppercase tracking-[0.32em] text-ivory/85 transition duration-500 hover:border-ivory/60 hover:text-ivory;
+  }
+  .serif-title {
+    @apply font-serif font-normal leading-[1.02] tracking-[0.01em];
   }
   .link-underline {
     @apply relative;
@@ -55,7 +57,7 @@ body {
   inset: -100%;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.06;
+  opacity: 0.045;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   animation: grain 7s steps(8) infinite;
 }

@@ -1,18 +1,18 @@
-import { Cormorant_Garamond, Inter } from 'next/font/google';
+import { Italiana, Jost } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const serif = Cormorant_Garamond({
+const serif = Italiana({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  style: ['normal', 'italic'],
+  weight: '400',
   variable: '--font-serif',
   display: 'swap',
 });
 
-const sans = Inter({
+const sans = Jost({
   subsets: ['latin'],
+  weight: ['300', '400', '500'],
   variable: '--font-sans',
   display: 'swap',
 });
@@ -23,10 +23,10 @@ export const metadata = {
     template: '%s · LSG',
   },
   description:
-    'Galería curada de piezas de diseñador en Argentina. Louis Vuitton, Balenciaga, Amiri, Off-White, Loewe, Supreme. Una pieza, una vez.',
+    'Galería curada de piezas de diseñador en Argentina. Louis Vuitton, Balenciaga, Amiri, Off-White, Loewe, Supreme. Elegido para pocos.',
   openGraph: {
     title: 'LSG — Luxury Selection Gallery',
-    description: 'Una pieza. Una vez. Galería curada de diseño de autor en Argentina.',
+    description: 'Elegido para pocos. Selección curada de piezas de diseñador en Argentina.',
     locale: 'es_AR',
     type: 'website',
   },
