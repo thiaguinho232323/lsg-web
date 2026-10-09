@@ -8,10 +8,10 @@ export const metadata = {
     template: '%s · LSG',
   },
   description:
-    'Galería curada de piezas de diseñador en Argentina. Louis Vuitton, Balenciaga, Amiri, Off-White, Loewe, Supreme. Elegido para pocos.',
+    'Selección de piezas de diseñador originales en Argentina. Louis Vuitton, Balenciaga, Amiri, Off-White, Loewe, Supreme. Elegido para pocos.',
   openGraph: {
     title: 'LSG — Luxury Selection Gallery',
-    description: 'Elegido para pocos. Selección curada de piezas de diseñador en Argentina.',
+    description: 'Elegido para pocos. Piezas de diseñador originales y únicas en Argentina.',
     locale: 'es_AR',
     type: 'website',
   },
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
         />
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
       </head>

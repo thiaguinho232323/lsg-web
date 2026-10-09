@@ -4,7 +4,7 @@
 
 :root {
   color-scheme: dark;
-  --font-serif: 'Italiana';
+  --font-serif: 'Jost';
   --font-sans: 'Jost';
 }
 
@@ -34,7 +34,7 @@ body {
     @apply inline-flex items-center justify-center gap-3 border border-ivory/20 px-8 py-4 text-[10.5px] font-light uppercase tracking-[0.32em] text-ivory/85 transition duration-500 hover:border-ivory/60 hover:text-ivory;
   }
   .serif-title {
-    @apply font-serif font-normal leading-[1.02] tracking-[0.01em];
+    @apply font-serif font-light leading-[1.08] tracking-[0.005em];
   }
   .link-underline {
     @apply relative;

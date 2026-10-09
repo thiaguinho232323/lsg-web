@@ -15,7 +15,7 @@ export default function Home() {
     <>
       {/* ───────────── HERO CON VIDEO ───────────── */}
       <section className="grain relative flex min-h-[100svh] flex-col overflow-hidden bg-ink">
-        <HeroVideo src={site.heroVideo} srcMobile={site.heroVideoMobile} />
+        <HeroVideo clips={site.heroVideos} />
         {/* velos para que el texto siempre se lea */}
         <div className="pointer-events-none absolute inset-0 bg-ink/30" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-ink/60" />
@@ -33,11 +33,11 @@ export default function Home() {
           />
 
           <h1 className="serif-title mt-9 md:mt-11">
-            <span className="rise block text-[17vw] text-ivory md:text-[7.5rem]" style={{ animationDelay: '650ms' }}>
+            <span className="rise block font-light text-[17vw] text-ivory md:text-[7.5rem]" style={{ animationDelay: '650ms' }}>
               Elegido
             </span>
             <span
-              className="rise gold-sheen block text-[17vw] md:text-[7.5rem]"
+              className="rise gold-sheen block font-light text-[17vw] md:text-[7.5rem]"
               style={{ animationDelay: '900ms' }}
             >
               para pocos.
@@ -167,19 +167,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ───────────── CURADURÍA (con imagen de fondo) ───────────── */}
-      <section id="curaduria" className="relative scroll-mt-20 overflow-hidden py-28 md:py-44">
+      {/* ───────────── CRITERIO (con imagen de fondo) ───────────── */}
+      <section id="criterio" className="relative scroll-mt-20 overflow-hidden py-28 md:py-44">
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-cover bg-center grayscale md:bg-fixed"
-          style={{ backgroundImage: `url("${site.imagenCuraduria}")` }}
+          style={{ backgroundImage: `url("${site.imagenCriterio}")` }}
         />
         <div className="absolute inset-0 bg-ink/80" />
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-transparent to-ink" />
 
         <div className="relative mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-12 md:gap-10 md:px-10">
           <Reveal className="md:col-span-5">
-            <p className="kicker">Sobre la curaduría</p>
+            <p className="kicker">Nuestro criterio</p>
             <h2 className="serif-title mt-6 text-[2.6rem] md:text-6xl">
               Elegimos menos para que cada pieza <span className="text-gold">diga más.</span>
             </h2>
