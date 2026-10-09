@@ -167,19 +167,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ───────────── CRITERIO (con imagen de fondo) ───────────── */}
-      <section id="criterio" className="relative scroll-mt-20 overflow-hidden py-28 md:py-44">
+      {/* ───────────── NUESTRA MIRADA (con imagen de fondo) ───────────── */}
+      <section id="nuestra-mirada" className="relative scroll-mt-20 overflow-hidden py-28 md:py-44">
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-cover bg-center grayscale md:bg-fixed"
-          style={{ backgroundImage: `url("${site.imagenCriterio}")` }}
+          style={{ backgroundImage: `url("${site.imagenMirada}")` }}
         />
         <div className="absolute inset-0 bg-ink/80" />
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-transparent to-ink" />
 
         <div className="relative mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-12 md:gap-10 md:px-10">
           <Reveal className="md:col-span-5">
-            <p className="kicker">Nuestro criterio</p>
+            <p className="kicker">Nuestra mirada</p>
             <h2 className="serif-title mt-6 text-[2.6rem] md:text-6xl">
               Elegimos menos para que cada pieza <span className="text-gold">diga más.</span>
             </h2>

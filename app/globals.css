@@ -122,6 +122,42 @@ body {
   transform: none;
 }
 
+/* Barra del visor 360° */
+.range-360 {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  background: transparent;
+  cursor: pointer;
+}
+.range-360::-webkit-slider-runnable-track {
+  height: 1px;
+  background: rgba(237, 232, 223, 0.25);
+}
+.range-360::-moz-range-track {
+  height: 1px;
+  background: rgba(237, 232, 223, 0.25);
+}
+.range-360::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -6.5px;
+  border-radius: 9999px;
+  border: 1px solid #c6a664;
+  background: #0a0a0a;
+}
+.range-360::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  border: 1px solid #c6a664;
+  background: #0a0a0a;
+}
+.range-360:disabled {
+  opacity: 0.4;
+}
+
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { scrollbar-width: none; }
 
