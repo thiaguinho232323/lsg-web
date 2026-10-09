@@ -275,5 +275,33 @@
       "/piezas/supreme-box-logo-tee-white-1.jpg",
       "/piezas/supreme-box-logo-tee-white-2.jpg"
     ]
+  },
+  {
+    "slug": "louis-vuitton-lv-skate-black",
+    "numero": 13,
+    "marca": "Louis Vuitton",
+    "nombre": "LV Skate Sneaker Black / White",
+    "categoria": "Calzado",
+    "talle": "42",
+    "condicion": "Nueva",
+    "precio": 1250,
+    "estado": "disponible",
+    "badge": "Pieza única",
+    "destacada": true,
+    "descripcion": "La zapatilla skate de Louis Vuitton en negro, con suela blanca y Monogram Flower en el lateral. Sin uso, con caja y accesorios originales.",
+    "detalles": [
+      "Cuero, gamuza y mesh",
+      "Cordones gruesos",
+      "Caja y dust bags originales"
+    ],
+    "fotos": [
+      "/piezas/louis-vuitton-lv-skate-black-1.jpg",
+      "/piezas/louis-vuitton-lv-skate-black-2.jpg"
+    ],
+    "vista360": {
+      "carpeta": "/piezas/louis-vuitton-lv-skate-black/360",
+      "cuadros": 36,
+      "extension": "jpg"
+    }
   }
 ]
