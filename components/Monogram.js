@@ -5,7 +5,7 @@ export default function Monogram({ full = false, size = 'md', className = '' }) 
     <span className={`inline-flex flex-col items-center leading-none ${className}`}>
       <span className="flex items-center gap-2.5">
         <span className={`h-px ${bar} bg-gold/70`} />
-        <span className={`font-serif ${text} font-medium tracking-[0.2em] pl-[0.2em] text-ivory`}>LSG</span>
+        <span className={`font-serif ${text} tracking-[0.24em] pl-[0.24em] text-ivory`}>LSG</span>
         <span className={`h-px ${bar} bg-gold/70`} />
       </span>
       {full && (

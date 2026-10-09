@@ -169,7 +169,7 @@ export default function Catalog({ pieces, initialMarca = null }) {
                   }`}
                 />
               </span>
-              Ver archivo
+              Ver vendidas
             </button>
           </div>
         </div>
@@ -182,8 +182,8 @@ export default function Catalog({ pieces, initialMarca = null }) {
           </div>
         ) : (
           <div className="flex flex-col items-center py-24 text-center">
-            <p className="font-serif text-3xl font-light italic text-ivory/90">Nada en sala con esos filtros.</p>
-            <p className="mt-3 text-sm text-stone">Probá con otra combinación o escribinos: quizás la podemos conseguir.</p>
+            <p className="font-serif text-3xl text-ivory/90">No hay piezas con esos filtros.</p>
+            <p className="mt-3 text-sm text-stone">Probá con otra combinación o escribinos: quizás podemos conseguirla.</p>
             <button onClick={limpiar} className="btn-ghost mt-8">
               Ver todo
             </button>

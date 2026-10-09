@@ -7,7 +7,7 @@ import { generalWaLink, site } from '@/lib/pieces';
 import { InstagramIcon, TikTokIcon } from './Icons';
 
 const links = [
-  { href: '/galeria', label: 'Galería' },
+  { href: '/galeria', label: 'Selección' },
   { href: '/#marcas', label: 'Marcas' },
   { href: '/#curaduria', label: 'Curaduría' },
   { href: '/#como-adquirir', label: 'Cómo adquirir' },
@@ -51,7 +51,7 @@ export default function Header() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="link-underline text-[11px] uppercase tracking-[0.25em] text-ivory/80 hover:text-ivory"
+                className="link-underline text-[10.5px] uppercase tracking-[0.3em] text-ivory/75 hover:text-ivory"
               >
                 {l.label}
               </Link>
@@ -62,9 +62,9 @@ export default function Header() {
             href={generalWaLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden border border-gold/50 px-5 py-2.5 text-[10px] uppercase tracking-[0.3em] text-gold transition hover:bg-gold hover:text-ink md:inline-block"
+            className="hidden border border-gold/50 px-5 py-2.5 text-[9.5px] uppercase tracking-[0.32em] text-gold transition hover:bg-gold hover:text-ink md:inline-block"
           >
-            Escribinos
+            Contacto
           </a>
 
           <button
@@ -85,14 +85,14 @@ export default function Header() {
           open ? 'opacity-100' : 'pointer-events-none opacity-0'
         }`}
       >
-        <p className="kicker mb-8">Índice</p>
+        <p className="kicker mb-10">Menú</p>
         <nav className="flex flex-col gap-5">
           {links.map((l, i) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="font-serif text-4xl font-light text-ivory"
+              className="font-serif text-[2.6rem] leading-tight text-ivory"
               style={{ transitionDelay: `${i * 60}ms` }}
             >
               <span className="mr-4 align-middle font-sans text-[10px] tracking-[0.3em] text-gold">0{i + 1}</span>
@@ -105,7 +105,7 @@ export default function Header() {
             href={generalWaLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full bg-gold py-4 text-center text-[11px] font-medium uppercase tracking-[0.3em] text-ink"
+            className="btn-gold w-full"
           >
             Escribinos por WhatsApp
           </a>

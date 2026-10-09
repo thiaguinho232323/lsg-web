@@ -48,13 +48,13 @@ export default function PieceCard({ piece, priority = false, sizes = '(max-width
           <span className="truncate text-stone">{piece.marca}</span>
           <span className="shrink-0 text-gold/80">{pieceNumber(piece.numero)}</span>
         </div>
-        <h3 className="font-serif text-[17px] leading-snug text-ivory md:text-xl">{piece.nombre}</h3>
+        <h3 className="font-serif text-[18px] leading-snug tracking-[0.01em] text-ivory md:text-[21px]">{piece.nombre}</h3>
         <div className="flex items-baseline justify-between gap-2 pt-0.5">
-          <span className={`text-[13px] ${vendida ? 'text-stone line-through' : 'text-ivory/90'}`}>
+          <span className={`text-[12.5px] tracking-[0.04em] ${vendida ? 'text-stone line-through' : 'text-ivory/90'}`}>
             {formatUSD(piece.precio)}
           </span>
           <span className="text-[10px] text-stone">
-            {piece.talle !== 'Único' ? `T. ${piece.talle}` : 'Talle único'}
+            {piece.talle !== 'Único' ? `Talle ${piece.talle}` : 'Talle único'}
           </span>
         </div>
       </div>
