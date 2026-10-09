@@ -1,21 +1,6 @@
-import { Italiana, Jost } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
-const serif = Italiana({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-serif',
-  display: 'swap',
-});
-
-const sans = Jost({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-sans',
-  display: 'swap',
-});
 
 export const metadata = {
   title: {
@@ -40,8 +25,15 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={`${serif.variable} ${sans.variable}`} suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap"
+        />
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
       </head>
       <body>
