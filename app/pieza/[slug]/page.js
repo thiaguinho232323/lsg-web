@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import PieceGallery from '@/components/PieceGallery';
+import PieceMedia from '@/components/PieceMedia';
 import PieceCard from '@/components/PieceCard';
 import { ArrowIcon, WhatsAppIcon } from '@/components/Icons';
 import { allPieces, formatUSD, getPiece, pieceNumber, relatedPieces, waPieceLink } from '@/lib/pieces';
@@ -55,7 +55,13 @@ export default function PiezaPage({ params }) {
 
           <div className="grid md:grid-cols-12 md:gap-12 lg:gap-16">
             <div className="md:col-span-7">
-              <PieceGallery fotos={p.fotos} alt={`${p.marca} ${p.nombre}`} badge={p.badge} estado={p.estado} />
+              <PieceMedia
+                fotos={p.fotos}
+                alt={`${p.marca} ${p.nombre}`}
+                badge={p.badge}
+                estado={p.estado}
+                vista360={p.vista360}
+              />
             </div>
 
             {/* Cartela */}
