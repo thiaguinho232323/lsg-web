@@ -8,7 +8,7 @@ export default function HeroVideo({ clips = [] }) {
   const b = useRef(null);
   const [active, setActive] = useState(0); // 0 = video A visible, 1 = video B visible
   const [ready, setReady] = useState(false);
-  const state = useRef({ index: 0, mobile: false, active: 0 });
+  const state = useRef({ index: 0, mobile: false, active: 0, switching: false });
 
   const srcFor = (i) => {
     const clip = clips[i % clips.length];
@@ -33,20 +33,30 @@ export default function HeroVideo({ clips = [] }) {
 
   const handleEnded = (which) => {
     if (clips.length < 2) return;
-    if (which !== state.current.active) return;
+    if (which !== state.current.active || state.current.switching) return;
+    state.current.switching = true;
     const current = which === 0 ? a.current : b.current;
     const next = which === 0 ? b.current : a.current;
     next.currentTime = 0;
-    next.play()?.catch?.(() => {});
+    const tryPlay = () => next.play()?.catch?.(() => next.addEventListener('canplay', () => next.play(), { once: true }));
+    tryPlay();
     const nextActive = which === 0 ? 1 : 0;
     state.current.active = nextActive;
     state.current.index += 1;
     setActive(nextActive);
     // precargar el clip siguiente en el video que queda oculto
     setTimeout(() => {
+      current.pause();
       current.src = srcFor(state.current.index + 1);
       current.load();
+      state.current.switching = false;
     }, 1200);
+  };
+
+  // Cambia al siguiente clip un instante antes de que termine (más fluido y no depende solo del evento "ended").
+  const handleTime = (which) => (e) => {
+    const v = e.currentTarget;
+    if (v.duration && v.currentTime >= v.duration - 0.6) handleEnded(which);
   };
 
   const cls = (visible) =>
@@ -64,6 +74,7 @@ export default function HeroVideo({ clips = [] }) {
         loop={clips.length < 2}
         onPlaying={() => setReady(true)}
         onEnded={() => handleEnded(0)}
+        onTimeUpdate={handleTime(0)}
         className={cls(active === 0)}
       />
       <video
@@ -72,6 +83,7 @@ export default function HeroVideo({ clips = [] }) {
         playsInline
         preload="auto"
         onEnded={() => handleEnded(1)}
+        onTimeUpdate={handleTime(1)}
         className={cls(active === 1)}
       />
     </div>
