@@ -40,6 +40,11 @@ export default function PieceCard({ piece, priority = false, sizes = '(max-width
             {vendida ? 'Vendida' : 'Reservada'}
           </span>
         )}
+        {piece.vista360 && !vendida && (
+          <span className="absolute bottom-2.5 right-2.5 border border-ivory/30 bg-ink/60 px-1.5 py-0.5 text-[8.5px] tracking-[0.2em] text-ivory/80 backdrop-blur-sm md:bottom-3 md:right-3">
+            360°
+          </span>
+        )}
         <span className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/0 transition duration-500 group-hover:ring-gold/30" />
       </div>
 

@@ -9,7 +9,7 @@ import { InstagramIcon, TikTokIcon } from './Icons';
 const links = [
   { href: '/galeria', label: 'Selección' },
   { href: '/#marcas', label: 'Marcas' },
-  { href: '/#criterio', label: 'Criterio' },
+  { href: '/#nuestra-mirada', label: 'Nuestra mirada' },
   { href: '/#como-adquirir', label: 'Cómo adquirir' },
 ];
 
