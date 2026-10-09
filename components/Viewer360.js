@@ -85,7 +85,7 @@ export default function Viewer360({ carpeta, cuadros = 36, extension = 'jpg', al
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        className={`relative aspect-square w-full overflow-hidden bg-carbon md:aspect-[4/5] ${
+        className={`relative aspect-square w-full overflow-hidden bg-ink ${
           ready ? 'cursor-grab active:cursor-grabbing' : 'cursor-progress'
         }`}
         style={{ touchAction: 'pan-y' }}
