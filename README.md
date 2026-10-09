@@ -54,6 +54,15 @@ En **`data/site.json`**: número de WhatsApp (solo dígitos, con 549 adelante), 
 
 Entrá al repo, abrí `data/pieces.json`, tocá el lápiz ✏️, editá y guardá con "Commit changes". Vercel publica los cambios solo en 1–2 minutos.
 
+## Video e imágenes de fondo
+
+En `data/site.json`:
+
+- `heroVideo` / `heroVideoMobile`: video del inicio (computadora / celular).
+- `imagenCuraduria` y `imagenEncargos`: imágenes de fondo de esas secciones.
+
+Hoy apuntan a material de [Pexels](https://www.pexels.com/license/) (licencia libre para uso comercial). Para usar los tuyos, subí los archivos a `public/media/` y cambiá la ruta, por ejemplo `"heroVideo": "/media/mi-video.mp4"`. Recomendado: video horizontal, corto (10–20 s), sin audio y de menos de 8 MB.
+
 ## Correr en local (opcional)
 
 ```bash
