@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import PieceCard from '@/components/PieceCard';
 import Reveal from '@/components/Reveal';
-import Monogram from '@/components/Monogram';
 import HeroVideo from '@/components/HeroVideo';
 import { ArrowIcon, InstagramIcon, TikTokIcon, WhatsAppIcon } from '@/components/Icons';
 import { allPieces, brandIndex, featuredPieces, generalWaLink, site } from '@/lib/pieces';
@@ -121,8 +120,7 @@ export default function Home() {
       {/* ───────────── FRASE ───────────── */}
       <section className="border-y border-line/50 py-24 md:py-36">
         <Reveal className="mx-auto max-w-4xl px-6 text-center md:px-10">
-          <Monogram size="sm" className="opacity-70" />
-          <p className="serif-title mt-12 text-[2.1rem] leading-[1.2] md:text-[3.6rem]">
+          <p className="serif-title text-[2.1rem] leading-[1.2] md:text-[3.6rem]">
             Cada pieza fue elegida.
             <br />
             <span className="text-gold">Ninguna está por casualidad.</span>
