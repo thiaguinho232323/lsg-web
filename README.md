@@ -58,10 +58,10 @@ Entrá al repo, abrí `data/pieces.json`, tocá el lápiz ✏️, editá y guard
 
 En `data/site.json`:
 
-- `heroVideo` / `heroVideoMobile`: video del inicio (computadora / celular).
-- `imagenCuraduria` y `imagenEncargos`: imágenes de fondo de esas secciones.
+- `heroVideos`: lista de clips del video del inicio. Se reproducen en orden; cada uno tiene versión `desktop` (computadora) y `mobile` (celular).
+- `imagenCriterio` y `imagenEncargos`: imágenes de fondo de esas secciones.
 
-Hoy apuntan a material de [Pexels](https://www.pexels.com/license/) (licencia libre para uso comercial). Para usar los tuyos, subí los archivos a `public/media/` y cambiá la ruta, por ejemplo `"heroVideo": "/media/mi-video.mp4"`. Recomendado: video horizontal, corto (10–20 s), sin audio y de menos de 8 MB.
+Hoy apuntan a material de [Pexels](https://www.pexels.com/license/) (licencia libre para uso comercial). Para usar los tuyos, subí los archivos a `public/media/` y cambiá la ruta, por ejemplo `"desktop": "/media/mi-video.mp4"`. Recomendado: video horizontal, corto (10–20 s), sin audio y de menos de 8 MB.
 
 ## Correr en local (opcional)
 
