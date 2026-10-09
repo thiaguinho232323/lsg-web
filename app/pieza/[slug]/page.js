@@ -26,6 +26,7 @@ const ESTADO_TEXTO = {
 };
 
 const CONDICION_TEXTO = {
+  DS: 'Deadstock: nueva, sin uso.',
   Nueva: 'Sin uso, con etiquetas o en su caja original.',
   Impecable: 'Usada muy pocas veces. Sin detalles visibles.',
   'Con uso': 'Uso visible y honesto. Consultanos por fotos de detalle.',
