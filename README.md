@@ -54,12 +54,25 @@ En **`data/site.json`**: número de WhatsApp (solo dígitos, con 549 adelante), 
 
 Entrá al repo, abrí `data/pieces.json`, tocá el lápiz ✏️, editá y guardá con "Commit changes". Vercel publica los cambios solo en 1–2 minutos.
 
+## Vista 360° (opcional, por pieza)
+
+1. Sacá entre 24 y 36 fotos de la pieza girándola sobre una base giratoria: misma distancia, misma luz y la cámara fija. Cada foto, un pequeño giro (36 fotos = 10° cada una).
+2. Nombralas `01.jpg`, `02.jpg`, … `36.jpg` (formato cuadrado, ideal 1000×1000, fondo oscuro).
+3. Subilas a una carpeta, por ejemplo `public/piezas/mi-zapatilla/360/`.
+4. En la pieza, agregá:
+
+```json
+"vista360": { "carpeta": "/piezas/mi-zapatilla/360", "cuadros": 36, "extension": "jpg" }
+```
+
+La ficha muestra la vista 360° (se gira arrastrando o con la barra) y un botón para pasar a las fotos.
+
 ## Video e imágenes de fondo
 
 En `data/site.json`:
 
 - `heroVideos`: lista de clips del video del inicio. Se reproducen en orden; cada uno tiene versión `desktop` (computadora) y `mobile` (celular).
-- `imagenCriterio` y `imagenEncargos`: imágenes de fondo de esas secciones.
+- `imagenMirada` y `imagenEncargos`: imágenes de fondo de esas secciones.
 
 Hoy apuntan a material de [Pexels](https://www.pexels.com/license/) (licencia libre para uso comercial). Para usar los tuyos, subí los archivos a `public/media/` y cambiá la ruta, por ejemplo `"desktop": "/media/mi-video.mp4"`. Recomendado: video horizontal, corto (10–20 s), sin audio y de menos de 8 MB.
 
